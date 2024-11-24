@@ -1,6 +1,16 @@
-(ns migratus-container.core)
+(ns migratus-container.core
+  (:require [clojure.edn :as edn]
+            [migratus.core :as migratus])
+  (:gen-class))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn fetch-config
+  []
+  (edn/read-string (slurp "resources/migratus.config.edn")))
+
+(defn apply-migrations
+  []
+  (-> (fetch-config)
+      migratus/migrate))
+
+(defn -main []
+  (apply-migrations))
