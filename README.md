@@ -1,14 +1,10 @@
-# migratus-container
+# Migratus Container
 
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
+Docker Image for applying migrations to Databases using Migratus.
 
 ## License
 
-Copyright © 2024 FIXME
+Copyright © 2024 Bruno do Nascimento Maciel
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
