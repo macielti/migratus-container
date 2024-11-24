@@ -11,4 +11,4 @@
                  [com.taoensso/timbre "6.6.1"]
                  [migratus "1.6.3"]]
 
-  :repl-options {:init-ns migratus-container.core})
+  :main migratus-container.core)
