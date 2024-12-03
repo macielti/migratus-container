@@ -10,6 +10,7 @@
   :dependencies [[org.clojure/clojure "1.12.0"]
                  [com.taoensso/timbre "6.6.1"]
                  [org.xerial/sqlite-jdbc "3.47.0.0"]
+                 [org.postgresql/postgresql "42.7.4"]
                  [migratus "1.6.3"]]
 
   :main migratus-container.core)
